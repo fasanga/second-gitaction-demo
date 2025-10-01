@@ -24,7 +24,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '16'
-      - name: Install dependencies
+      - name: Install dependencies on target machine
         run: npm ci
       - name: Build project
         run: npm run build
